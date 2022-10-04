@@ -1,4 +1,4 @@
-# my-personal-framework
+# personal-framework
 This is my personal framework
 
-[ View Demo ](https://kqimi.github.io/my-personal-framework)
+[ View Demo ](https://kqimi.github.io/personal-framework)
