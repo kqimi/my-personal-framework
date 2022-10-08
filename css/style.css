@@ -9,10 +9,11 @@
 TABLE OF CONTENTS
 
 #GlOBAL RESETS
-# TYPOGRAPHY
+# BASE TYPOGRAPHY
 # BUTTONS
 # MEDIA
     #RESPONSIVE IMAGES
+#HELPERS
 # LAYOUT
     #CONTAINER
     #MEDIA QUERIES
@@ -87,7 +88,7 @@ hr {
   font-weight: normal;
   line-height: 1;
   margin: 0;
-  color: rgb(255, 0, 255);
+  color: rgb(255, 0, 0);
 }
 
 .subheadline {
@@ -105,7 +106,7 @@ hr {
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  border-bottom: 5px solid rgb(158, 0, 158);
+  border-bottom: 5px solid rgb(10, 6, 90);
   display: table;
   padding: 0 0 0.5em 0;
   margin: 1em auto 3em auto;
@@ -114,14 +115,14 @@ hr {
 /* BUTTONS */
 .button {
   display: inline-block;
-  background-color: rgb(255, 0, 255);
+  background-color: rgb(255, 0, 0);
   color: #fff;
   text-decoration: none;
   padding: 1em;
   border-radius: 5px;
 }
 .button:hover {
-  background-color: rgb(158, 0, 158);
+  background-color: rgb(10, 6, 90);
 }
 
 /* RESPONSIVE IMAGES */
@@ -248,9 +249,16 @@ body {
   padding: 1%;
 }
 
+/* FULL WIDTH  CONTAINER FIX */
+.container-fullwidth .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 /* SITE STRUCTURE */
 .site-header {
-  background: rgb(158, 0, 158);
+  position: absolute;
+  width: 100%;
   padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -261,6 +269,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.site-header .site-id {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.site-header .logomark {
+  margin-right: 0.7em;
 }
 .site-header a {
   color: white;
@@ -273,7 +292,7 @@ body {
 
 /* SITE FOOTER */
 .site-footer {
-  background: rgb(158, 0, 158);
+  background: rgb(10, 6, 90);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,18 +322,41 @@ body {
 }
 
 section {
-  padding: 4em;
+  padding: 4em 0;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* HERO SECTION */
 .hero {
-  background-color: rgb(255, 202, 202);
+  background-color: rgb(10, 6, 90);
   text-align: center;
-  padding: 6em 0;
+  padding: 8em 0 4em 0;
+  min-height: 100vh;
+  color: rgba(255, 255, 255, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .hero h1 {
   margin-bottom: 0.25em;
+  color: rgb(255, 255, 255);
 }
 .hero p {
   margin: 1em auto;
+}
+
+/* HELPERS */
+.hide-visually {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }

@@ -1,16 +1,25 @@
 /* SITE STRUCTURE */
 
 .site-header {
-    background: $color-accent-dark;
+    position: absolute;
+    width: 100%;
     padding: 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     
+    .site-id {
+        display: flex;
+        align-items: center;
+    }
+
+    .logomark {
+        margin-right: .7em;
+    }
+
     a {
         color: white;
         text-decoration: none;
-
     }
 
     h1 {
@@ -53,16 +62,26 @@
 }
 
 section {
-    padding: 4em;
+    padding: 4em 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
 }
 
 /* HERO SECTION */
 .hero {
-    background-color: $color-accent-light;
+    background-color: $color-accent-dark;
     text-align: center;
-    padding: 6em 0;
+    padding: 8em 0 4em 0;
+    min-height: 100vh;
+    color: $color-text-body-light;
+    display: flex;
+    align-items: center;
+
     h1 {
         margin-bottom: .25em;
+        color: $color-text-headings-light;
     }
 
     p {
