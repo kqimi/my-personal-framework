@@ -11,4 +11,9 @@ document.addEventListener('DOMContentLoaded', function () {
             mysitenav.setAttribute('data-navstate', 'closed')
         }
     };
+
+    // SCROLL TRIGGERED ANIMATION
+    let option= {
+        root: document
+    }
 });

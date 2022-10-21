@@ -1,0 +1,10 @@
+/* CSS ANIMATIONS */
+
+section[data-sectionstate="active"] {
+    background: pink;
+    transition: all 2s linear 2s;
+    
+}
+section[data-sectionstate="inactive"] {
+    background: teal;
+}

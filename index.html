@@ -17,16 +17,29 @@
     <header class="site-header">
         <div class="site-id">
             <div class="logomark">
-                <a href="#"><img src="#" alt="Site Name Logo" width="50" height="50"></a>
+                <a href="#"><img src="img/sitename-logo.png" alt="Site Name Logo" width="50" height="50"></a>
             </div>
             <h1 class="hide-visually"><a href="index.html">Personal Framework</a></h1>
         </div>
         <nav class="site-nav" data-navstate="closed">
+            
+            <button class="menu-button">
+                <div class="menu-button-text hide-visually">Menu</div>
+                <svg width="40" height="24">
+                    <rect id="menubar-top" x="0" y="0" width="40" height="4" />
+                    <rect id="menubar-mid" x="0" y="10" width="40" height="4" />
+                    <rect id="menubar-bot" x="0" y="20" width="40" height="4" />
 
-            <button class="menu-button">Menu</button>
+
+                </svg>
+            </button>
             <ul>
                 <li><a href="subpage1/index.html">Sub Page 1</a></li>
                 <li><a href="section2/index.html">Sub Page 2</a></li>
+                <li><a href="section3/index.html">Sub Page 3</a></li>
+                <li><a href="section3/index.html">Sub Page 3</a></li>
+                <li><a href="section3/index.html">Sub Page 3</a></li>
+                <li><a href="section3/index.html">Sub Page 3</a></li>
                 <li><a href="section3/index.html">Sub Page 3</a></li>
             </ul>
         </nav>
@@ -45,7 +58,7 @@
         </div>
     </section>
 
-    <section id="section1">
+    <section id="section1" data-sectionstate="active">
         <div class="container">
 
             <div class="row">
@@ -61,7 +74,7 @@
         </div>
     </section>
 
-    <section id="section 2">
+    <section id="section 2" data-sectionstate="inactive">
         <div class="container">
     
             <div class="row swapped">

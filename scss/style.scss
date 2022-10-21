@@ -6,16 +6,16 @@ $color-text-body: rgba(0, 0, 0, 0.8);
 $color-text-body-light: rgba(255, 255, 255, .8);
 $color-text-headings: rgba(0, 0, 0, 1);
 $color-text-headings-light: rgba(255, 255, 255, 1);
-$color-accent: rgb(255, 0, 0);
-$color-accent-dark: rgb(10, 6, 90);
-$color-accent-light: rgb(202, 202, 255);
-$color-link: rgb(61, 90, 255);
-$color-link-dark: rgb(19, 41, 165);
+$color-accent: rgb(70, 59, 165); 
+$color-accent-dark: rgb(19, 84, 45); 
+$color-accent-light: rgb(202, 202, 255); 
+$color-link: rgb(94, 19, 160); 
+$color-link-dark: rgb(31, 3, 43);
 
 $color-lightgrey: rgba(0,0,0,.5);
 
-$font-family-sans: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-$font-family-serif: 'Source Serif Pro', Georgia, 'Times New Roman', Times, serif;
+$font-family-sans: Helvetica, Arial, sans-serif;
+$font-family-serif: Georgia, 'Times New Roman', Times, serif;
 
 // BREAKPOINTS 
 $breakpoint-small: 768px;
@@ -32,3 +32,4 @@ $breakpoint-large: 1250px;
 @import "partials/structure"; 
 @import "partials/helpers"; 
 @import "partials/sitenav";
+@import "partials/animations"; 
