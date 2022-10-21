@@ -6,16 +6,16 @@ $color-text-body: rgba(0, 0, 0, 0.8);
 $color-text-body-light: rgba(255, 255, 255, .8);
 $color-text-headings: rgba(0, 0, 0, 1);
 $color-text-headings-light: rgba(255, 255, 255, 1);
-$color-accent: rgb(70, 59, 165); 
-$color-accent-dark: rgb(19, 84, 45); 
-$color-accent-light: rgb(202, 202, 255); 
+$color-accent: rgb(190, 166, 193); 
+$color-accent-dark: rgb(32, 2, 31);  
+$color-accent-light: rgb(213, 213, 249); 
 $color-link: rgb(94, 19, 160); 
-$color-link-dark: rgb(31, 3, 43);
+$color-link-darker: rgb(31, 3, 43);
 
 $color-lightgrey: rgba(0,0,0,.5);
 
-$font-family-sans: Helvetica, Arial, sans-serif;
-$font-family-serif: Georgia, 'Times New Roman', Times, serif;
+$font-family-sans: Bilo,Helvetica, Arial, sans-serif;
+$font-family-heading: Co-headline, Georgia, 'Times New Roman', Times, sans-serif;
 
 // BREAKPOINTS 
 $breakpoint-small: 768px;

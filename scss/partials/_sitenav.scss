@@ -1,9 +1,12 @@
 /* SITE-NAV */
-.site-nav {
+.site-footer .site-nav {
+
+    ul {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
+    }
 
 }
 
@@ -23,7 +26,7 @@ a {
 .site-header {
     .site-nav {
         ul {
-            background: violet;
+            background: rgb(63, 59, 91);
             position: fixed;
             top: 0;
             right: 0;
@@ -35,6 +38,8 @@ a {
             justify-content: center;
             transform: translate(0,0);
             transition: all .3s ease-out;
+            list-style: none;
+
 
 
         }
@@ -62,34 +67,31 @@ a {
 
         }
         &[data-navstate="open"] {
-            li {
-                opacity: 1;
+            .menu-button {
+                position: fixed;
+            }
+
+            #menubar-top {
+                transform-origin: center;
+                transform: translate(7px,7px) rotate(45deg);
+            }
+
+            #menubar-mid {
+                opacity: 0;
+            }
+
+            #menubar-bot {
+                transform-origin: center;
+                transform: translate(0px,-4px) rotate(45deg);
+            }
+
+            ul {
                 transform: translate(0,0);
             }
-        }
-        &[data-navstate="closed"] {
+
             li {
-                transition: none;
+                transform: translate(0,0);
             }
-        }
-
-        .menu-button {
-            background-color: transparent;
-            border: none;
-            color: white;
-            padding: .7em;
-            position: relative;
-            z-index: 20;
-
-            svg {
-                display: block;
-
-                rect {
-                    fill: white;
-                }
-            }
-
-        }
 
         // SIMPLE X ANIMATION 
         .menu-button svg.simple-x-animation rect {
@@ -144,4 +146,6 @@ a {
 
 
     }
+}
+
 }

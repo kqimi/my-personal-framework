@@ -3,14 +3,16 @@
 
 .button {
     display: inline-block;
-    background-color: $color-accent;
-    color: #fff;
+    background-color: $color-accent; 
+    color: rgba(255,255,255,1);
     text-decoration: none;
     padding: 1em;
     border-radius: 5px;
+    margin: 1em 0;
 
     &:hover {
-        background-color: $color-accent-dark;
+        background-color: $color-accent-dark; 
+        color: white;
     }
 
 }

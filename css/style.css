@@ -36,11 +36,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /* BASE TEXT FONTS */
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Bilo, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Co-headline, Georgia, "Times New Roman", Times, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 /* BASE TYPOGRAPHY */
@@ -74,6 +78,14 @@ p {
   max-width: 40em;
 }
 
+/* LINKS */
+a {
+  color: rgb(94, 19, 160);
+}
+a:hover {
+  color: rgb(31, 3, 43);
+}
+
 /* HORIZONTAL LINE */
 hr {
   border: 0;
@@ -88,7 +100,7 @@ hr {
   font-weight: normal;
   line-height: 1;
   margin: 0;
-  color: rgb(70, 59, 165);
+  color: rgb(190, 166, 193);
 }
 
 .subheadline {
@@ -102,11 +114,11 @@ hr {
 /* SECTION HEADING */
 .section-heading {
   font-size: 1em;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Bilo, Helvetica, Arial, sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  border-bottom: 5px solid rgb(19, 84, 45);
+  border-bottom: 5px solid rgb(32, 2, 31);
   display: table;
   padding: 0 0 0.5em 0;
   margin: 1em auto 3em auto;
@@ -115,14 +127,16 @@ hr {
 /* BUTTONS */
 .button {
   display: inline-block;
-  background-color: rgb(70, 59, 165);
-  color: #fff;
+  background-color: rgb(190, 166, 193);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   padding: 1em;
   border-radius: 5px;
+  margin: 1em 0;
 }
 .button:hover {
-  background-color: rgb(19, 84, 45);
+  background-color: rgb(32, 2, 31);
+  color: white;
 }
 
 /* RESPONSIVE IMAGES */
@@ -279,6 +293,7 @@ body {
           align-items: center;
 }
 .site-header .logomark {
+  max-width: 70px;
   margin-right: 0.7em;
 }
 .site-header a {
@@ -292,7 +307,7 @@ body {
 
 /* SITE FOOTER */
 .site-footer {
-  background: rgb(19, 84, 45);
+  background: rgb(213, 213, 249);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -304,6 +319,7 @@ body {
 .site-footer a {
   color: white;
   text-decoration: none;
+  list-style: none;
 }
 
 section {
@@ -319,7 +335,7 @@ section {
 
 /* HERO SECTION */
 .hero {
-  background-color: rgb(19, 84, 45);
+  background-color: rgb(213, 213, 249);
   text-align: center;
   padding: 8em 0 4em 0;
   min-height: 100vh;
@@ -347,7 +363,7 @@ section {
 }
 
 /* SITE-NAV */
-.site-nav {
+.site-footer .site-nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -369,7 +385,7 @@ a {
 }
 
 .site-header .site-nav ul {
-  background: violet;
+  background: rgb(63, 59, 91);
   position: fixed;
   top: 0;
   right: 0;
@@ -392,6 +408,7 @@ a {
           transform: translate(0, 0);
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  list-style: none;
 }
 .site-header .site-nav[data-navstate=closed] ul {
   -webkit-transform: translate(100%, 0%);
@@ -438,48 +455,51 @@ a {
   -webkit-transition-delay: 0.9s;
           transition-delay: 0.9s;
 }
-.site-header .site-nav[data-navstate=open] li {
-  opacity: 1;
+.site-header .site-nav[data-navstate=open] .menu-button {
+  position: fixed;
+}
+.site-header .site-nav[data-navstate=open] #menubar-top {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: translate(7px, 7px) rotate(45deg);
+          transform: translate(7px, 7px) rotate(45deg);
+}
+.site-header .site-nav[data-navstate=open] #menubar-mid {
+  opacity: 0;
+}
+.site-header .site-nav[data-navstate=open] #menubar-bot {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: translate(0px, -4px) rotate(45deg);
+          transform: translate(0px, -4px) rotate(45deg);
+}
+.site-header .site-nav[data-navstate=open] ul {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
-.site-header .site-nav[data-navstate=closed] li {
-  -webkit-transition: none;
-  transition: none;
+.site-header .site-nav[data-navstate=open] li {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
-.site-header .site-nav .menu-button {
-  background-color: transparent;
-  border: none;
-  color: white;
-  padding: 0.7em;
-  position: relative;
-  z-index: 20;
-}
-.site-header .site-nav .menu-button svg {
-  display: block;
-}
-.site-header .site-nav .menu-button svg rect {
-  fill: white;
-}
-.site-header .site-nav .menu-button svg.simple-x-animation rect {
+.site-header .site-nav[data-navstate=open] .menu-button svg.simple-x-animation rect {
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-.site-header .site-nav[data-navstate=open] .menu-button svg #menubar-top {
+.site-header .site-nav[data-navstate=open][data-navstate=open] .menu-button svg #menubar-top {
   -webkit-transform: translate(-5px, 9px) rotate(30deg);
           transform: translate(-5px, 9px) rotate(30deg);
 }
-.site-header .site-nav[data-navstate=open] .menu-button svg #menubar-mid {
+.site-header .site-nav[data-navstate=open][data-navstate=open] .menu-button svg #menubar-mid {
   -webkit-transform: scale(0, 1);
           transform: scale(0, 1);
 }
-.site-header .site-nav[data-navstate=open] .menu-button svg #menubar-bot {
+.site-header .site-nav[data-navstate=open][data-navstate=open] .menu-button svg #menubar-bot {
   -webkit-transform: translate(-5px, -9px) rotate(-30deg);
           transform: translate(-5px, -9px) rotate(-30deg);
 }
-.site-header .site-nav .menu-button svg.squish-x-animation rect {
+.site-header .site-nav[data-navstate=open] .menu-button svg.squish-x-animation rect {
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-animation-duration: 0.5s;
@@ -489,24 +509,24 @@ a {
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
-.site-header .site-nav .menu-button svg.squish-x-animation #menubar-top {
+.site-header .site-nav[data-navstate=open] .menu-button svg.squish-x-animation #menubar-top {
   -webkit-animation-name: squish-x-top-close;
           animation-name: squish-x-top-close;
 }
-.site-header .site-nav .menu-button svg.squish-x-animation #menubar-bot {
+.site-header .site-nav[data-navstate=open] .menu-button svg.squish-x-animation #menubar-bot {
   -webkit-animation-name: squish-x-bot-close;
           animation-name: squish-x-bot-close;
 }
-.site-header .site-nav[data-navstate=open] .menu-button svg.squish-x-animation #menubar-top {
+.site-header .site-nav[data-navstate=open][data-navstate=open] .menu-button svg.squish-x-animation #menubar-top {
   -webkit-animation-name: squish-x-top-open;
           animation-name: squish-x-top-open;
 }
-.site-header .site-nav[data-navstate=open] .menu-button svg.squish-x-animation #menubar-mid {
+.site-header .site-nav[data-navstate=open][data-navstate=open] .menu-button svg.squish-x-animation #menubar-mid {
   opacity: 0;
   -webkit-transition: all 0s linear 0.25s;
   transition: all 0s linear 0.25s;
 }
-.site-header .site-nav[data-navstate=open] .menu-button svg.squish-x-animation #menubar-bot {
+.site-header .site-nav[data-navstate=open][data-navstate=open] .menu-button svg.squish-x-animation #menubar-bot {
   -webkit-animation-name: squish-x-bot-open;
           animation-name: squish-x-bot-open;
 }
