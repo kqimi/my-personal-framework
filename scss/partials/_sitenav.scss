@@ -1,26 +1,20 @@
 /* SITE-NAV */
-.site-footer .site-nav {
+.site-nav {
 
     ul {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
+    
     }
 
-}
-
-
-a {
+     a {
     display: inline-block;
     padding: 1em;
     line-height: 1;
-}
+    }
 
-.menu-button {
-    background-color: transparent;
-    border: 1px solid white;
-    padding: .5em 
 }
 
 .site-header {
@@ -38,10 +32,6 @@ a {
             justify-content: center;
             transform: translate(0,0);
             transition: all .3s ease-out;
-            list-style: none;
-
-
-
         }
         &[data-navstate="closed"] {
             ul{
@@ -68,30 +58,33 @@ a {
         }
         &[data-navstate="open"] {
             .menu-button {
+                opacity: 1;
                 position: fixed;
             }
+        }
 
-            #menubar-top {
-                transform-origin: center;
-                transform: translate(7px,7px) rotate(45deg);
-            }
-
-            #menubar-mid {
-                opacity: 0;
-            }
-
-            #menubar-bot {
-                transform-origin: center;
-                transform: translate(0px,-4px) rotate(45deg);
-            }
-
-            ul {
-                transform: translate(0,0);
-            }
-
+        &[data-navstate="closed"] {
             li {
-                transform: translate(0,0);
+                transition: none;
             }
+        }
+
+        .menu-button {
+            background-color: transparent;
+            border: none;
+            color: white;
+            padding: .7em;
+            position: relative;
+            z-index: 20;
+
+            svg {
+                display: block;
+
+                rect {
+                    fill: white;
+                }
+            }
+        }
 
         // SIMPLE X ANIMATION 
         .menu-button svg.simple-x-animation rect {
@@ -126,26 +119,24 @@ a {
         @keyframes squish-x-top-open {
             0% { transform: translate(0,0); }
             50% { transform: translate(0,10px); }
-            100% {transform: translate(-5px,9px) rotate(30deg); }
+            100% { transform: translate(-5px,9px) rotate(30deg); }
         }
         @keyframes squish-x-bot-open {
             0% { transform: translate(0,0); }
             50% { transform: translate(0,-10px); }
-            100% {transform: translate(-5px,-9px) rotate(-30deg); }
+            100% { transform: translate(-5px,-9px) rotate(-30deg); }
         }
         @keyframes squish-x-top-close {
             0% { transform: translate(-5px,9px) rotate(30deg); }
             50% { transform: translate(0,10px); }
-            100% {transform: translate(0,0); }
+            100% { transform: translate(0,0); }
         }
         @keyframes squish-x-bot-close {
             0% { transform: translate(-5px,-9px) rotate(-30deg); }
             50% { transform: translate(0,-10px); }
-            100% {transform: translate(0,0); }
+            100% { transform: translate(0,0); }
         }
 
 
     }
-}
-
 }
