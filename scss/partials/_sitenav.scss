@@ -39,6 +39,12 @@
             }
         }
 
+        &[data-navstate="open"] {
+            li{
+                opacity: 1;
+            }
+        }
+
         // ANIMATE THE SUB NAV ITEMS IN GRADUALLY
         li {
             opacity: 0;
@@ -59,7 +65,7 @@
         &[data-navstate="open"] {
             .menu-button {
                 opacity: 1;
-                position: fixed;
+                position: relative;
             }
         }
 
@@ -68,6 +74,8 @@
                 transition: none;
             }
         }
+
+
 
         .menu-button {
             background-color: transparent;
@@ -93,9 +101,9 @@
         }
 
         &[data-navstate="open"] .menu-button svg {
-            #menubar-top { transform: translate(-5px,9px) rotate(30deg);}
+            #menubar-top { transform: translate(-5px,9px) rotate(45deg);}
             #menubar-mid { transform: scale(0,1);}
-            #menubar-bot { transform: translate(-5px,-9px) rotate(-30deg);}
+            #menubar-bot { transform: translate(-5px,-9px) rotate(-45deg);}
         }
 
         // SQUISH X ANIMATION
@@ -119,20 +127,20 @@
         @keyframes squish-x-top-open {
             0% { transform: translate(0,0); }
             50% { transform: translate(0,10px); }
-            100% { transform: translate(-5px,9px) rotate(30deg); }
+            100% { transform: translate(-5px,9px) rotate(45deg); }
         }
         @keyframes squish-x-bot-open {
             0% { transform: translate(0,0); }
             50% { transform: translate(0,-10px); }
-            100% { transform: translate(-5px,-9px) rotate(-30deg); }
+            100% { transform: translate(-5px,-9px) rotate(-45deg); }
         }
         @keyframes squish-x-top-close {
-            0% { transform: translate(-5px,9px) rotate(30deg); }
+            0% { transform: translate(-5px,9px) rotate(45deg); }
             50% { transform: translate(0,10px); }
             100% { transform: translate(0,0); }
         }
         @keyframes squish-x-bot-close {
-            0% { transform: translate(-5px,-9px) rotate(-30deg); }
+            0% { transform: translate(-5px,-9px) rotate(-45deg); }
             50% { transform: translate(0,-10px); }
             100% { transform: translate(0,0); }
         }

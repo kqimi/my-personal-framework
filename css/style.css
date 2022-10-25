@@ -405,6 +405,9 @@ section {
   -webkit-transform: translate(100%, 0%);
           transform: translate(100%, 0%);
 }
+.site-header .site-nav[data-navstate=open] li {
+  opacity: 1;
+}
 .site-header .site-nav li {
   opacity: 0;
   -webkit-transform: translate(50px, 0);
@@ -448,7 +451,7 @@ section {
 }
 .site-header .site-nav[data-navstate=open] .menu-button {
   opacity: 1;
-  position: fixed;
+  position: relative;
 }
 .site-header .site-nav[data-navstate=closed] li {
   -webkit-transition: none;
@@ -475,16 +478,16 @@ section {
   transition: all 0.3s ease-out;
 }
 .site-header .site-nav[data-navstate=open] .menu-button svg #menubar-top {
-  -webkit-transform: translate(-5px, 9px) rotate(30deg);
-          transform: translate(-5px, 9px) rotate(30deg);
+  -webkit-transform: translate(-5px, 9px) rotate(45deg);
+          transform: translate(-5px, 9px) rotate(45deg);
 }
 .site-header .site-nav[data-navstate=open] .menu-button svg #menubar-mid {
   -webkit-transform: scale(0, 1);
           transform: scale(0, 1);
 }
 .site-header .site-nav[data-navstate=open] .menu-button svg #menubar-bot {
-  -webkit-transform: translate(-5px, -9px) rotate(-30deg);
-          transform: translate(-5px, -9px) rotate(-30deg);
+  -webkit-transform: translate(-5px, -9px) rotate(-45deg);
+          transform: translate(-5px, -9px) rotate(-45deg);
 }
 .site-header .site-nav .menu-button svg.squish-x-animation rect {
   -webkit-transform-origin: center;
@@ -527,8 +530,8 @@ section {
             transform: translate(0, 10px);
   }
   100% {
-    -webkit-transform: translate(-5px, 9px) rotate(30deg);
-            transform: translate(-5px, 9px) rotate(30deg);
+    -webkit-transform: translate(-5px, 9px) rotate(45deg);
+            transform: translate(-5px, 9px) rotate(45deg);
   }
 }
 @keyframes squish-x-top-open {
@@ -541,8 +544,8 @@ section {
             transform: translate(0, 10px);
   }
   100% {
-    -webkit-transform: translate(-5px, 9px) rotate(30deg);
-            transform: translate(-5px, 9px) rotate(30deg);
+    -webkit-transform: translate(-5px, 9px) rotate(45deg);
+            transform: translate(-5px, 9px) rotate(45deg);
   }
 }
 @-webkit-keyframes squish-x-bot-open {
@@ -555,8 +558,8 @@ section {
             transform: translate(0, -10px);
   }
   100% {
-    -webkit-transform: translate(-5px, -9px) rotate(-30deg);
-            transform: translate(-5px, -9px) rotate(-30deg);
+    -webkit-transform: translate(-5px, -9px) rotate(-45deg);
+            transform: translate(-5px, -9px) rotate(-45deg);
   }
 }
 @keyframes squish-x-bot-open {
@@ -569,14 +572,14 @@ section {
             transform: translate(0, -10px);
   }
   100% {
-    -webkit-transform: translate(-5px, -9px) rotate(-30deg);
-            transform: translate(-5px, -9px) rotate(-30deg);
+    -webkit-transform: translate(-5px, -9px) rotate(-45deg);
+            transform: translate(-5px, -9px) rotate(-45deg);
   }
 }
 @-webkit-keyframes squish-x-top-close {
   0% {
-    -webkit-transform: translate(-5px, 9px) rotate(30deg);
-            transform: translate(-5px, 9px) rotate(30deg);
+    -webkit-transform: translate(-5px, 9px) rotate(45deg);
+            transform: translate(-5px, 9px) rotate(45deg);
   }
   50% {
     -webkit-transform: translate(0, 10px);
@@ -589,8 +592,8 @@ section {
 }
 @keyframes squish-x-top-close {
   0% {
-    -webkit-transform: translate(-5px, 9px) rotate(30deg);
-            transform: translate(-5px, 9px) rotate(30deg);
+    -webkit-transform: translate(-5px, 9px) rotate(45deg);
+            transform: translate(-5px, 9px) rotate(45deg);
   }
   50% {
     -webkit-transform: translate(0, 10px);
@@ -603,8 +606,8 @@ section {
 }
 @-webkit-keyframes squish-x-bot-close {
   0% {
-    -webkit-transform: translate(-5px, -9px) rotate(-30deg);
-            transform: translate(-5px, -9px) rotate(-30deg);
+    -webkit-transform: translate(-5px, -9px) rotate(-45deg);
+            transform: translate(-5px, -9px) rotate(-45deg);
   }
   50% {
     -webkit-transform: translate(0, -10px);
@@ -617,8 +620,8 @@ section {
 }
 @keyframes squish-x-bot-close {
   0% {
-    -webkit-transform: translate(-5px, -9px) rotate(-30deg);
-            transform: translate(-5px, -9px) rotate(-30deg);
+    -webkit-transform: translate(-5px, -9px) rotate(-45deg);
+            transform: translate(-5px, -9px) rotate(-45deg);
   }
   50% {
     -webkit-transform: translate(0, -10px);
