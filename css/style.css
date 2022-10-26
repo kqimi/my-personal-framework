@@ -321,6 +321,10 @@ body {
   text-decoration: none;
 }
 
+.site-main {
+  overflow-x: hidden;
+}
+
 section {
   padding: 4em 0;
   min-height: 101vh;
@@ -400,6 +404,7 @@ section {
           transform: translate(0, 0);
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  z-index: 10;
 }
 .site-header .site-nav[data-navstate=closed] ul {
   -webkit-transform: translate(100%, 0%);
@@ -451,7 +456,9 @@ section {
 }
 .site-header .site-nav[data-navstate=open] .menu-button {
   opacity: 1;
-  position: relative;
+  position: fixed;
+  top: 1.2em;
+  right: 1.3em;
 }
 .site-header .site-nav[data-navstate=closed] li {
   -webkit-transition: none;
@@ -634,12 +641,83 @@ section {
 }
 
 /* CSS ANIMATIONS */
-section[data-sectionstate=active] {
-  opacity: 1;
-  -webkit-transition: all 0.4s linear 0.5s;
-  transition: all 0.4s linear 0.5s;
+/* ANIMATE SECTION 1 ON SCROOL */
+#section1.scroll-triggered[data-sectionstate=inactive] .ki-contentblock-image {
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+  opacity: 0;
+}
+#section1.scroll-triggered[data-sectionstate=inactive] .ki-contentblock-text {
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+  opacity: 0;
 }
 
-section[data-sectionstate=inactive] {
+#section1.scroll-triggered[data-sectionstate=active] .ki-contentblock-image {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: all 1s ease-out 0.5s;
+  transition: all 1s ease-out 0.5s;
+}
+#section1.scroll-triggered[data-sectionstate=active] .ki-contentblock-text {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: all 1s ease-out 0.5s;
+  transition: all 1s ease-out 0.5s;
+}
+
+/* ANIMATE SECTION 2 ON SCROOL */
+#section2.scroll-triggered[data-sectionstate=inactive] .ki-contentblock-image {
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
   opacity: 0;
+}
+#section2.scroll-triggered[data-sectionstate=inactive] .ki-contentblock-text {
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
+  opacity: 0;
+}
+
+#section2.scroll-triggered[data-sectionstate=active] .ki-contentblock-image {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+#section2.scroll-triggered[data-sectionstate=active] .ki-contentblock-text {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+/* ANIMATE SECTION 3 ON SCROLL */
+#section3 .ki-contentblock-image {
+  position: relative;
+  margin-top: 4em;
+}
+
+#section3 .ki-character {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+#section3.scroll-triggered[data-sectionstate=inactive] .ki-character {
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+
+#section3.scroll-triggered[data-sectionstate=active] .ki-character {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 1s ease-out 1s;
+  transition: all 1s ease-out 1s;
 }

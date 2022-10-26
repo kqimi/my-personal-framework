@@ -1,9 +1,90 @@
 /* CSS ANIMATIONS */
 
-section[data-sectionstate="active"] {
-    opacity: 1;
-    transition: all .4s linear .5s;
-}
-section[data-sectionstate="inactive"] {
+/* ANIMATE SECTION 1 ON SCROOL */
+#section1.scroll-triggered[data-sectionstate="inactive"] {
+
+    .ki-contentblock-image {
+    transform: translateX(-200px);
     opacity: 0;
+    }
+
+    .ki-contentblock-text {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+}
+
+#section1.scroll-triggered[data-sectionstate="active"] {
+    .ki-contentblock-image {
+        opacity: 1;
+        transform: translateX(0px);
+        transition: all 1s ease-out .5s;
+    }
+
+    
+    .ki-contentblock-text {
+        opacity: 1;
+        transform  : translateX(0px);
+        transition: all 1s ease-out .5s;
+    }
+}
+
+/* ANIMATE SECTION 2 ON SCROOL */
+#section2.scroll-triggered[data-sectionstate="inactive"] {
+
+    .ki-contentblock-image {
+    transform: translateY(200px);
+    opacity: 0;
+    }
+
+    .ki-contentblock-text {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+}
+
+#section2.scroll-triggered[data-sectionstate="active"] {
+    .ki-contentblock-image {
+        opacity: 1;
+        transform: translateX(0px);
+        transition: all 1s ease-out;
+    }
+
+    
+    .ki-contentblock-text {
+        opacity: 1;
+        transform  : translateX(0px);
+        transition: all 1s ease-out;
+    }
+}
+
+/* ANIMATE SECTION 3 ON SCROLL */
+
+#section3 .ki-contentblock-image {
+    position: relative;
+    margin-top: 4em;
+}
+
+#section3 .ki-character {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#section3.scroll-triggered[data-sectionstate="inactive"] {
+    .ki-character {
+        transform: translate(-50%, 50%);
+    }
+    
+}
+
+#section3.scroll-triggered[data-sectionstate="active"] {
+
+    .ki-character {
+        transform: translate(-50%,-50%);
+        transition: all 1s ease-out 1s;
+    }
+
 }
