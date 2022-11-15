@@ -3,10 +3,12 @@
 .site-header {
     position: absolute;
     width: 100%;
-    padding: 1em;
+    padding: .5em;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
     
     .site-id {
         display: flex;
@@ -59,7 +61,7 @@ section {
 
 /* HERO SECTION */
 .hero {
-    background-color: $color-accent-light;
+    background-color: black;
     text-align: center;
     padding: 8em 0 4em 0;
     min-height: 101vh;
