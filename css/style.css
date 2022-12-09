@@ -494,7 +494,11 @@ li {
 }
 
 #keyfeature {
-  background-color: black;
+  background-image: url(../img/agave-faded-background.png);
+  background-size: cover;
+  margin: 0 auto;
+  max-width: 100%;
+  border: 3px solid red;
 }
 #keyfeature h3 {
   text-align: center;

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 737.5 456">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #1f3566;
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-7 {
+        fill: url(#linear-gradient-5);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-4863.5" y1="729.39" x2="-4863.5" y2="728.39" gradientTransform="translate(-33992 -308078) rotate(-180) scale(7 -423)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1f3566"/>
+      <stop offset="1" stop-color="#6e558c"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-4255.89" y1="735.56" x2="-4255.89" y2="734.56" gradientTransform="translate(-457151.25 29820.75) rotate(90) scale(7 -622.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8ec9b7"/>
+      <stop offset="1" stop-color="#1f3566"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="-4255.89" y1="734.92" x2="-4255.89" y2="733.92" gradientTransform="translate(-506406.25 30184.25) rotate(90) scale(7 -690)" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-4" x1="-3696" y1="728.48" x2="-3696" y2="727.48" gradientTransform="translate(26562.5 233842) scale(7 -321)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" x1="-3696" y1="728.11" x2="-3696" y2="727.11" gradientTransform="translate(25909.44 137495.34) scale(7 -188.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6e558c"/>
+      <stop offset="1" stop-color="#1f3566"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_5" data-name="Layer 5">
+    <path id="Rectangle_440" data-name="Rectangle 440" class="cls-1" d="M52.5,456h0c-1.93,0-3.5-1.57-3.5-3.5V36.5c0-1.93,1.57-3.5,3.5-3.5h0c1.93,0,3.5,1.57,3.5,3.5V452.5c0,1.93-1.57,3.5-3.5,3.5Z"/>
+    <g>
+      <path id="Rectangle_438-3" data-name="Rectangle 438-3" class="cls-6" d="M737.5,29.5h0c0,1.93-1.57,3.5-3.5,3.5H118.5c-1.93,0-3.5-1.57-3.5-3.5h0c0-1.93,1.57-3.5,3.5-3.5H734c1.93,0,3.5,1.57,3.5,3.5Z"/>
+      <path id="Rectangle_438-4" data-name="Rectangle 438-4" class="cls-2" d="M737.5,29.5h0c0,1.93-1.57,3.5-3.5,3.5H118.5c-1.93,0-3.5-1.57-3.5-3.5h0c0-1.93,1.57-3.5,3.5-3.5H734c1.93,0,3.5,1.57,3.5,3.5Z"/>
+    </g>
+    <path id="Rectangle_441" data-name="Rectangle 441" class="cls-4" d="M690,393h0c0,1.93-1.57,3.5-3.5,3.5H3.5c-1.93,0-3.5-1.57-3.5-3.5H0c0-1.93,1.57-3.5,3.5-3.5H686.5c1.93,0,3.5,1.57,3.5,3.5Z"/>
+    <path id="Rectangle_437" data-name="Rectangle 437" class="cls-5" d="M690.5,0h0c1.93,0,3.5,1.57,3.5,3.5V317.5c0,1.93-1.57,3.5-3.5,3.5h0c-1.93,0-3.5-1.57-3.5-3.5V3.5c0-1.93,1.57-3.5,3.5-3.5Z"/>
+    <path id="Rectangle_439" data-name="Rectangle 439" class="cls-3" d="M737.5,12.5h0c0,1.93-1.57,3.5-3.5,3.5h-181.5c-1.93,0-3.5-1.57-3.5-3.5h0c0-1.93,1.57-3.5,3.5-3.5h181.5c1.93,0,3.5,1.57,3.5,3.5Z"/>
+    <path id="Rectangle_443" data-name="Rectangle 443" class="cls-3" d="M198.5,407.5h0c0,1.93-1.57,3.5-3.5,3.5H13.5c-1.93,0-3.5-1.57-3.5-3.5h0c0-1.93,1.57-3.5,3.5-3.5H195c1.93,0,3.5,1.57,3.5,3.5Z"/>
+    <path id="Rectangle_442" data-name="Rectangle 442" class="cls-7" d="M37.44,245.84h0c1.93,0,3.5,1.57,3.5,3.5v181.5c0,1.93-1.57,3.5-3.5,3.5h0c-1.93,0-3.5-1.57-3.5-3.5V249.34c0-1.93,1.57-3.5,3.5-3.5Z"/>
+  </g>
+</svg>
