@@ -504,6 +504,12 @@ li {
   text-align: center;
   margin: 0 auto;
 }
+#keyfeature img.agave-left {
+  width: 818px;
+  height: auto;
+  vertical-align: middle;
+  float: left;
+}
 
 video {
   width: 100% !important;
